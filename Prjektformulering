@@ -1,0 +1,25 @@
+Formålet med dette projekt er at udvikle et “tyveriforebyggelses” system, som skal kunne simulere aktivitet i hjemmet.
+
+Skolen har opsat følgende minimumskrav til projektet:
+	
+•	Det skal indeholde en pc
+•	Seriel kommunikation mellem PC og arduino
+•	En microcontroller (arduino mega 2560)
+•	En kodelås (DE2 board)
+•	Powerline kommunikation
+•	Èn eller flere x10 enheder
+
+Endvidere er det ikke tilladt at arbejde med 230V elnet, derfor bruges der et 18V elnet, som er stillet til rådighed af skolen.
+
+Ud fra de ovenstående krav vil vi lave vores “tyveriforebyggelses” system der skal:
+
+•	Styre enheder i hjemmet
+•	Kunne aktivere fjernstyring med password
+•	Have status indikation når systemet er klar til at fjernstyres (rød/grøn diode)
+•	Skal kunne modtage status på systemet på PC’en, selvom der ikke er valgt et scenarie
+
+PC’en skal simulere “fjernbetjening”. Systemet skal være beskyttet med en kodelås ved hjælp af DE2 boardet, der gør det muligt at anvende “fjernbetjeningen” på systemet. Enhederne i systemet bliver styret ved hjælp af X10 protokollen med hhv. eget fremstillet hardware og Arduino Mega2560.
+
+Brugeren kan ved hjælp af “fjernbetjeningen” vælge, at aktivere eller deaktivere scenariet når systemet er aktivt, eller se status på de tilkoblede enheder i hjemmet. Hvis koden på kodelåsen bliver tastet forkert mere end tre gange i træk, skal systemet låses og kun en tekniker med administratorrettigheder, kan låse det op igen.
+
+I den færdige prototype vil der være fokus på at scenariet der kan vælges, ændrer sig efter solopgang og solnedgang på den aktuelle dato, og tager højde for hverdag og weekend, for at gøre det så realistisk som muligt.
